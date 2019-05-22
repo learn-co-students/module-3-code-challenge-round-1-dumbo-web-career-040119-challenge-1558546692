@@ -33,9 +33,9 @@ In the above example, you see list of courses and when you click on a single cou
 As multiple students may be using this API, your instructors will assign you a unique user id. If you are assigned an id of 1, you will only make requests to API endpoints which begin with `https://bayside-high.herokuapp.com/users/1/`.
 
 #### API Endpoints
-`https://bayside-high.herokuapp.com/users/1/courses` # See all courses
-`https://bayside-high.herokuapp.com/users/1/courses/:id` # See a single course
-`https://bayside-high.herokuapp.com/users/1/students/:id` # Update a student
+`https://bayside-high.herokuapp.com/api/v1/users/1/courses` # See all courses
+`https://bayside-high.herokuapp.com/api/v1/users/1/courses/:id` # See a single course
+`https://bayside-high.herokuapp.com/api/v1/users/1/students/:id` # Update a student
 
 The API endpoint we need to retrieve all the courses is a conventional RESTful route
 * **Route:** GET `https://bayside-high.herokuapp.com/users/1/courses`
