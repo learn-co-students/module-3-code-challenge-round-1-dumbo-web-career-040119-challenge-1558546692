@@ -30,22 +30,22 @@ In the above example, you see list of courses and when you click on a single cou
 
 ### The API
 
-As multiple students may be using this API, your instructors will assign you a unique user id. If you are assigned an id of 1, you will only make requests to API endpoints which begin with `https://sheltered-stream-73510.herokuapp.com/users/1/`.
+As multiple students may be using this API, your instructors will assign you a unique user id. If you are assigned an id of 1, you will only make requests to API endpoints which begin with `https://bayside-high.herokuapp.com/users/1/`.
 
 #### API Endpoints
-`https://sheltered-stream-73510.herokuapp.com/users/1/courses` # See all courses
-`https://sheltered-stream-73510.herokuapp.com/users/1/courses/:id` # See a single course
-`https://sheltered-stream-73510.herokuapp.com/users/1/students/:id` # Update a student
+`https://bayside-high.herokuapp.com/users/1/courses` # See all courses
+`https://bayside-high.herokuapp.com/users/1/courses/:id` # See a single course
+`https://bayside-high.herokuapp.com/users/1/students/:id` # Update a student
 
 The API endpoint we need to retrieve all the courses is a conventional RESTful route
-* **Route:** GET `https://sheltered-stream-73510.herokuapp.com/users/1/courses`
+* **Route:** GET `https://bayside-high.herokuapp.com/users/1/courses`
 
 
 To see the students for a specific course you'll need to make a GET request 
-* **Route:** GET `https://sheltered-stream-73510.herokuapp.com/users/1/courses/:id`
+* **Route:** GET `https://bayside-high.herokuapp.com/users/1/courses/:id`
 
 To update a students percentage you'll need to make a PATCH request
-* **Route:** PATCH `https://sheltered-stream-73510.herokuapp.com/users/1/students/:id`
+* **Route:** PATCH `https://bayside-high.herokuapp.com/users/1/students/:id`
 * **Body:**
 ```js
   {percentage: "new percent"}
